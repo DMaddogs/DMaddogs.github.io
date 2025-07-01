@@ -1,11 +1,23 @@
 
 import React from 'react';
 import { ChevronRight, Sparkles, Zap, Heart } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const handleGameHosting = () => {
+    navigate('/game-hosting');
+  };
+
+  const handleJoinGame = () => {
+    navigate('/game-hosting');
+  };
+
   return (
     <div className="h-screen w-full overflow-hidden flex flex-row">
-      {/* Section 1 - Creative */}
+      {/* Section 1 - Career */}
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-purple-600 via-pink-600 to-red-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -18,10 +30,10 @@ const Index = () => {
           <div className="text-center text-white transform transition-all duration-500 group-hover:scale-110">
             <Sparkles className="w-16 h-16 mx-auto mb-6 animate-pulse" />
             <h2 className="text-4xl md:text-6xl font-bold mb-4 opacity-90 group-hover:opacity-100">
-              Creative
+              Career
             </h2>
             <p className="text-lg md:text-xl opacity-75 group-hover:opacity-90 transition-opacity duration-300">
-              Unleash your imagination
+              Professional journey
             </p>
             <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
               <div className="flex items-center justify-center space-x-2 text-sm">
@@ -33,7 +45,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Section 2 - Innovation */}
+      {/* Section 2 - Hobby */}
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -46,22 +58,33 @@ const Index = () => {
           <div className="text-center text-white transform transition-all duration-500 group-hover:scale-110">
             <Zap className="w-16 h-16 mx-auto mb-6 animate-bounce" />
             <h2 className="text-4xl md:text-6xl font-bold mb-4 opacity-90 group-hover:opacity-100">
-              Innovation
+              Hobby
             </h2>
             <p className="text-lg md:text-xl opacity-75 group-hover:opacity-90 transition-opacity duration-300">
-              Shape the future
+              Gaming & Fun
             </p>
             <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
-              <div className="flex items-center justify-center space-x-2 text-sm">
-                <span>Discover</span>
-                <ChevronRight className="w-4 h-4 animate-bounce" />
+              <div className="flex flex-col items-center space-y-3">
+                <Button 
+                  onClick={handleGameHosting}
+                  className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm"
+                >
+                  Host a Game
+                </Button>
+                <Button 
+                  onClick={handleJoinGame}
+                  variant="outline"
+                  className="bg-transparent hover:bg-white/10 text-white border-white/50 hover:border-white"
+                >
+                  Join Game
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Section 3 - Passion */}
+      {/* Section 3 - Personal */}
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-orange-500 via-red-500 to-pink-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -78,14 +101,14 @@ const Index = () => {
           <div className="text-center text-white transform transition-all duration-500 group-hover:scale-110">
             <Heart className="w-16 h-16 mx-auto mb-6 animate-pulse" />
             <h2 className="text-4xl md:text-6xl font-bold mb-4 opacity-90 group-hover:opacity-100">
-              Passion
+              Personal
             </h2>
             <p className="text-lg md:text-xl opacity-75 group-hover:opacity-90 transition-opacity duration-300">
-              Follow your heart
+              Life & Stories
             </p>
             <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
               <div className="flex items-center justify-center space-x-2 text-sm">
-                <span>Feel</span>
+                <span>Discover</span>
                 <ChevronRight className="w-4 h-4 animate-bounce" />
               </div>
             </div>
