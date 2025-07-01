@@ -4,7 +4,7 @@ import { ChevronRight, Sparkles, Zap, Heart } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="h-screen w-full overflow-hidden flex flex-col">
+    <div className="h-screen w-full overflow-hidden flex flex-row">
       {/* Section 1 - Creative */}
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-purple-600 via-pink-600 to-red-500">
         {/* Animated Background Pattern */}
