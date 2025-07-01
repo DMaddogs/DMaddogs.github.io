@@ -9,7 +9,7 @@ const Index = () => {
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-purple-600 via-pink-600 to-red-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] animate-pulse"></div>
+          <div className="absolute inset-0 bg-white/10 animate-pulse"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 group-hover:animate-[slide-in-right_2s_ease-in-out_infinite]"></div>
         </div>
         
@@ -37,7 +37,7 @@ const Index = () => {
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.3"%3E%3Cpath d="M20 20l-8-8h16l-8 8zm8-8v16l-8-8 8-8z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] animate-[spin_20s_linear_infinite]"></div>
+          <div className="absolute inset-0 bg-white/10 animate-[spin_20s_linear_infinite]"></div>
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-[slide-in-right_1.5s_ease-in-out_infinite]"></div>
         </div>
         
@@ -65,7 +65,7 @@ const Index = () => {
       <div className="group flex-1 relative overflow-hidden transition-all duration-700 ease-out hover:flex-[2] bg-gradient-to-br from-orange-500 via-red-500 to-pink-500">
         {/* Animated Background Pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.3"%3E%3Cpath d="M40 40c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20c0-11.046 8.954-20 20-20z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] animate-pulse"></div>
+          <div className="absolute inset-0 bg-white/10 animate-pulse"></div>
           <div className="absolute inset-0">
             <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/40 rounded-full animate-ping"></div>
             <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-white/30 rounded-full animate-ping delay-1000"></div>
